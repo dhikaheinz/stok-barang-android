@@ -14,18 +14,18 @@
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Masukkan Stok Barang"/>
+        android:text="Masukkan Data Keluar"/>
 
     <android.support.design.widget.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextID"
+            android:id="@+id/editTextIDOut"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="number"
-            android:hint="ID Barang"/>
+            android:hint="ID Barang Keluar"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -34,11 +34,11 @@
         android:layout_height="wrap_content">
 
         <EditText
-            android:id="@+id/editTextNama"
+            android:id="@+id/editTextIDBarang"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:hint="Nama Barang"/>
+            android:hint="ID Barang"/>
 
     </android.support.design.widget.TextInputLayout>
 
@@ -51,54 +51,22 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:inputType="textCapWords"
-            android:hint="Jumlah Stok"/>
+            android:hint="Jumlah Barang"/>
 
     </android.support.design.widget.TextInputLayout>
 
-    <RelativeLayout
+    <Button
+        android:id="@+id/buttonKeluar"
+        android:layout_marginTop="10dp"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_weight="2"
-        android:orientation="horizontal">
+        android:text="Keluarkan Barang"/>
 
-        <LinearLayout
-            android:id="@+id/allbutton"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:orientation="horizontal">
-
-            <Button
-                android:layout_toRightOf="@id/buttonStok"
-                android:layout_marginLeft="5dp"
-                android:layout_marginTop="10dp"
-                android:layout_weight="1"
-                android:id="@+id/buttonLihat"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Lihat Data Barang"/>
-
-            <Button
-                android:layout_marginRight="5dp"
-                android:id="@+id/buttonStok"
-                android:layout_marginTop="10dp"
-                android:layout_width="150dp"
-                android:layout_height="wrap_content"
-                android:text="Tambah Barang"
-                android:layout_weight="1"/>
-
-        </LinearLayout>
-
-        <Button
-            android:layout_marginLeft="5dp"
-            android:layout_marginRight="5dp"
-            android:layout_marginTop="5dp"
-            android:layout_below="@+id/allbutton"
-            android:layout_weight="2"
-            android:id="@+id/buttonBarangKeluar"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:text="Barang Keluar"/>
-
-    </RelativeLayout>
+    <Button
+        android:id="@+id/buttonLihatKeluar"
+        android:layout_marginTop="5dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Lihat Data Keluar"/>
 
 </LinearLayout>

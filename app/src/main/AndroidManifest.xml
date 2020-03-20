@@ -19,7 +19,9 @@
             </intent-filter>
         </activity>
         <activity android:name=".ViewActivity" />
-        <activity android:name=".UpdateActivity"></activity>
+        <activity android:name=".UpdateActivity" />
+        <activity android:name=".BarangKeluarActivity" />
+        <activity android:name=".ViewBarangKeluarActivity"></activity>
     </application>
 
 </manifest>
